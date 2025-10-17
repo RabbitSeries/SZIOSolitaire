@@ -1,0 +1,6 @@
+screenshots/
+__pycache__
+/*.png
+!/raw.png
+!/debug.png
+log
