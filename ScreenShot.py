@@ -210,7 +210,7 @@ template_paths = [*[[f"{prefix}card_{name}.png" for name in line]
 
 
 def BestMatch(image: Image):
-    image.save("tmp.png")
+    # image.save("tmp.png")
     cv_image = np.array(image.convert("RGB"))
     img_b, img_g, img_r = cv.split(cv_image)  # type: ignore
     results: list[tuple[float, str]] = []
@@ -284,6 +284,7 @@ def test():
     chance, _ = BestMatch(ExtractYaoji(localRaw))
     assert chance < 0.95
 
+def debug():
     screenshot = PILImage.open("raw.png")
     ExtractYaoji(screenshot).save(f"yaoji.png")
     ExtractCollected(screenshot, 0).save("blank_collect_1.png")
@@ -314,3 +315,4 @@ def test():
 if __name__ == "__main__":
     init()
     test()
+    debug()

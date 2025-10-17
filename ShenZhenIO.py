@@ -1,14 +1,14 @@
 import time
 from MouseController import Drag, MovePosition, leftClick
 from Solver import Location, Solve, State
-from ScreenShot import BestMatch, ExtractCollected, ExtractWild, ExtractYaoji, Majiang, MatchImages, ExtractTrays, capture_window_by_title
+from ScreenShot import BestMatch, ExtractCollected, ExtractWild, ExtractYaoji, Majiang, MatchImages, ExtractTrays, capture_window_by_title, init, test
 
 
 def main():
     # ============================== Templating
-    # init()
+    init()
     # ============================== Test
-    # test()
+    test()
     # ============================== DevTest
     # print(MatchImages(ExtractPiles(capture_window_by_title(), 0.1)))
     # ============================== Solve
