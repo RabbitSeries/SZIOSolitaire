@@ -160,7 +160,8 @@ class Majiang(Enum):
     @staticmethod
     def face(card: Majiang):
         return card.value % 9 if card.value < 3*9 else None
-
+    
+    // dynamic generate this
     tiao_1 = 0
     tiao_2 = 1
     tiao_3 = 2
